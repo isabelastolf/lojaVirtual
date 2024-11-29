@@ -11,6 +11,7 @@
     --cor-padrao-hover: #D91881;
     --cor-padrao-menu-mobile: #630A27;
     --cor-padrao-fonte-mobile: #f9f2e8; 
+    --cor-logo: #FAF3E8;
     --cor-fonte: #112130;
     --cor-fonte-p: #112130;
     --cor-btn-fonte: #461d35;
@@ -26,6 +27,10 @@ body {
 
 .banner {
     background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+}
+
+.novoMenu {
+    box-shadow: 0 0.1rem 0 0 rgba(17, 33, 48, 0.1);
 }
 
 .logo img {
@@ -46,10 +51,22 @@ body {
     padding-right: 1rem;
 }
 
+.containerPaginas {
+    max-width: 100%;
+    margin: auto;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     padding: 0.5rem;
+}
+
+.navbarPaginas{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--cor-logo);
 }
 
 nav {
@@ -85,6 +102,21 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.row2{    
+    display: flex;
+    margin: 6.25rem auto 3.125rem;
+    justify-content: space-between; 
+}
+
+.row2 select {
+    padding: 0.25rem;
+    border: 0.1rem solid var(--cor-fonte)
+}
+
+.row2 select:focus {
+    outline: none;
 }
 
 .col-2 {
@@ -141,7 +173,7 @@ p{
 }
 
 .col-3 img{
-    width: 100%;
+    width: 80%;
     margin-bottom: 2rem;
     object-fit: cover;
     object-position: center;
@@ -150,7 +182,7 @@ p{
 /* -------------------- PRODUTOS ------------------- */
 .col-4 {
     flex-basis: 30%;
-    min-width: 16rem;
+    min-width: 12rem;
     padding: 1.5rem;
     margin-bottom: 2rem;
     transition: 0.5s;
@@ -161,7 +193,7 @@ p{
 }
 
 .col-4 img {
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     object-position: center;
 }
@@ -298,6 +330,29 @@ small {
     transform: scale(1.1);
 }
 
+/* -------------------- PAGINAÇÃO ------------------- */
+
+.paginacao {
+    margin: 0 auto 5rem;
+}
+
+.paginacao span {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    border: 0.1rem solid var(--cor-padrao-menu-mobile);
+    text-align: center;
+    line-height: 2.5rem;
+    margin-left: 0.8rem;
+    cursor: pointer; 
+}
+
+.paginacao span:hover{
+    background: var(--cor-padrao-menu-mobile);
+    color: var(--cor-logo);
+    font-weight: 600;
+}
+
 /* -------------------- RODAPÉ ------------------- */
 
 .rodape {
@@ -306,6 +361,12 @@ small {
     padding: 3rem 0 1.5rem;
     font-size: 0.8rem;
 
+}
+
+.rodapePaginas {
+    background: var(--cor-logo);
+    color: var(--cor-fonte);
+    font-size: 0.8rem;
 }
 
 .rodape p {
@@ -320,6 +381,7 @@ small {
 .rodape-row1, .rodape-row2, .rodape-row3, .rodape-row4 {
     min-width: 16rem;
     margin-bottom: 1.5rem;
+    padding: 1rem 1rem;
 }
 
 .rodape-row1 {
@@ -331,7 +393,7 @@ small {
 }
 
 .app-logo img{ 
-    width: 2rem;
+    width: 10rem;
 }
 
 .rodape-row2 {
@@ -423,9 +485,5 @@ ul {
 
     .col-2 h1 {
         font-size: 1.6rem;
-    }
-
-    .col-6{
-
     }
 }
