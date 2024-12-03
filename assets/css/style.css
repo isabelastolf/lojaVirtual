@@ -427,6 +427,32 @@ ul {
     text-align: center;
 }
 
+/* -------------------- DETALHES DO PRODUTO ------------------- */
+
+.ver-produto{
+    margin-top: 5rem;
+}
+
+.ver-produto .col-3 img {
+    width: 100%;
+    padding: 0;
+}
+
+.ver-produto #produtoImg {
+    width: 25rem;
+    height: 37.5rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+.ver-produto .col-3 {
+    padding: 1.25rem;
+}
+
+.ver-produto p {
+    
+}
+
 /* -------------------- MENU CELULAR ------------------- */
 
 .menu-celular {
