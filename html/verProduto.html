@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<!-- INICIO HEADER -->
+ 
     <div class="novoMenu"> <!-- TROCOU O NOME NOVO MENU PARA DEIXAR O MENU EM CORES DIFERENTES -->
 
         <div class="containerPaginas"> <!-- INICIO CONTAINER -->
@@ -16,7 +18,7 @@
             <div class="navbarPaginas"> <!-- INICIO MENU NAVEGAÇÃO -->
 
                 <div class="logo"> <!-- INICIO DIV LOGO -->
-                    <img src="assets/img/logo.jpg" alt="Livraria Virtual">
+                    <a href="index.html" title=""><img src="assets/img/logo.jpg" alt="Livraria Virtual"></a>
                 </div> <!-- FIM DIV LOGO -->
 
                 <nav> <!-- INICIO MENU NAVEGAÇÃO -->
@@ -25,11 +27,11 @@
                         <li><a href="produtos.html" title="">Produtos</a></li>
                         <li><a href="" title="">Sobre</a></li>
                         <li><a href="" title="">Contatos</a></li>
-                        <li><a href="" title="">Meu Cadastro</a></li>
+                        <li><a href="minhaConta.html" title="">Minha Conta</a></li>
                     </ul>
                 </nav> <!-- FIM MENU NAVEGAÇÃO -->
 
-                <img src="assets/img/carrinho.png" alt="" width="25rem" height="25rem">
+                <a href="carrinho.html" title=""><img src="assets/img/carrinho.png" alt="" width="25rem" height="25rem"></a>
                 <img src="assets/img/menu.png" alt="" class="menu-celular" onclick="menucelular()">
 
             </div> <!-- FIM MENU NAVEGAÇÃO -->
@@ -38,6 +40,9 @@
 
     </div> <!-- FIM BANNER -->
 
+<!-- FIM HEADER -->
+
+<!-- INICIO PRODUTO -->
     <div class="corpo-categorias ver-produto"> <!-- INICIO PRODUTO DETALHES -->
 
         <div class="row">
@@ -46,14 +51,28 @@
 
                 <img src="assets/img/livro3-10.jpg" alt="" id="produtoImg">
 
+                <div class="img-linha"> <!-- INICIO LINHA GALERIA -->
+
+                    <div class="img-col">  <!-- INICIO ITEM GALERIA -->
+                        <img src="assets/img/livro3-10.jpg" alt="" width="100%" class="produtoMiniatura">
+                    </div>  <!-- FIM ITEM GALERIA --> 
+
+                    <div class="img-col">  <!-- INICIO ITEM GALERIA -->
+                        <img src="assets/img/detalhe-livro.jpg" alt="" width="100%" class="produtoMiniatura">
+                    </div>  <!-- FIM ITEM GALERIA --> 
+
+                    <div class="img-col">  <!-- INICIO ITEM GALERIA -->
+                        <img src="assets/img/detalhe-autor.jpg" alt="" width="100%" class="produtoMiniatura">
+                    </div>  <!-- FIM ITEM GALERIA --> 
+                
+                </div> <!-- FIM LINHA GALERIA -->
+
             </div>
 
             <div class="col-3">
 
                 <p>Cosmos - Carl Sagan</p>
-
                 <h1>Compre com desconto</h1>
-
                 <h4>R$35,00</h4>
 
                 <form action="" method="post">
@@ -121,10 +140,11 @@
 
     </div> <!-- FIM CORPO PRODUTOS RELACIONADOS -->
 
+<!-- FIM PÁGINA PRODUTO -->
 
+<!-- INICIO FOOTER -->
 
-
-    <footer class="rodapePaginas"> <!-- INICIO RODAPE -->
+    <footer class="rodapePaginas"> 
 
         <div class="containerPaginas">
 
@@ -173,11 +193,18 @@
 
 
 
-    </footer> <!-- FIM RODAPE -->
-    
+    </footer> 
+
+<!-- FIM FOOTER -->
+
+<!-- INICIO SCRIPTS -->
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/app.js"></script>
+
+<!-- FIM SCRIPTS -->
+
+
 </body>
 </html>

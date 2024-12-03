@@ -1,43 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livraria Virtual</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+<?php
+    require_once('header.php');
+?>
 
-</head>
-<body>
-
-    <div class="novoMenu"> <!-- TROCOU O NOME NOVO MENU PARA DEIXAR O MENU EM CORES DIFERENTES -->
-
-        <div class="containerPaginas"> <!-- INICIO CONTAINER -->
-
-            <div class="navbarPaginas"> <!-- INICIO MENU NAVEGAÇÃO -->
-
-                <div class="logo"> <!-- INICIO DIV LOGO -->
-                    <img src="assets/img/logo.jpg" alt="Livraria Virtual">
-                </div> <!-- FIM DIV LOGO -->
-
-                <nav> <!-- INICIO MENU NAVEGAÇÃO -->
-                    <ul id="MenuItens">
-                        <li><a href="index.html" title="">Início</a></li>
-                        <li><a href="produtos.html" title="">Produtos</a></li>
-                        <li><a href="" title="">Sobre</a></li>
-                        <li><a href="" title="">Contatos</a></li>
-                        <li><a href="" title="">Meu Cadastro</a></li>
-                    </ul>
-                </nav> <!-- FIM MENU NAVEGAÇÃO -->
-
-                <img src="assets/img/carrinho.png" alt="" width="25rem" height="25rem">
-                <img src="assets/img/menu.png" alt="" class="menu-celular" onclick="menucelular()">
-
-            </div> <!-- FIM MENU NAVEGAÇÃO -->
-
-        </div> <!-- FIM CONTAINER -->
-
-    </div> <!-- FIM BANNER -->
-
+<!-- INICIO PRODUTOS -->
 
     <div class="corpo-categorias"> <!-- INICIO CORPO TODOS OS LIVROS -->
 
@@ -56,7 +21,7 @@
 
             <div class="col-4"> <!-- INICIO ITENS -->
 
-                <img src="assets/img/livro1-2.jpg" alt="">
+                <a href="verProduto.php" title=""><img src="assets/img/livro1-2.jpg" alt=""></a>
                 <h4>Titulo do Livro</h4>
 
                 <div class="classificacao">
@@ -72,7 +37,7 @@
             </div>
             <div class="col-4">
 
-                <img src="assets/img/livro1-3.jpg" alt="">
+                <a href="verProduto.php" title=""><img src="assets/img/livro1-3.jpg" alt=""></a>
                 <h4>Titulo do Livro</h4>
 
                 <div class="classificacao">
@@ -88,7 +53,7 @@
             </div>
             <div class="col-4">
 
-                <img src="assets/img/livro1-4.jpg" alt="">
+                <a href="verProduto.php" title=""><img src="assets/img/livro1-4.jpg" alt=""></a>
                 <h4>Titulo do Livro</h4>
 
                 <div class="classificacao">
@@ -355,63 +320,8 @@
 
     </div> <!-- FIM CORPO TODOS OS LIVROS-->
 
+<!-- FIM PRODUTOS -->
 
-
-
-    <footer class="rodapePaginas"> <!-- INICIO RODAPE -->
-
-        <div class="containerPaginas">
-
-            <div class="row">
-                <div class="rodape-row1">
-                    <h3>Baixe o nosso App</h3>
-                    <p>Baixe nosso aplicativo nas principais plataformas.</p>
-                    <div class="app-logo">
-                        <img src="assets/img/googleplay.png" alt="">
-                        <img src="assets/img/applestore.png" alt="">
-                    </div>
-                </div>
-
-                <div class="rodape-row2">
-                    <img src="assets/img/logo2.jpg" alt="">
-                    <p>Morbi aliquam lorem ac nisl hendrerit, ut interdum leo pretium.</p>
-
-                </div>
-
-                <div class="rodape-row3">
-                    <h3>Mais informações</h3>
-                    <ul>
-                        <li>Cupons</li>
-                        <li>Blog</li>
-                        <li>Política de Privacidade</li>
-                        <li>Carreiras</li>
-                    </ul>
-                </div>
-
-                <div class="rodape-row4">
-                    <h3>Redes Sociais</h3>
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                        <li>Facebook</li>
-                        <li>Contatos</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="direitos">
-                &#169; Todos os direitos reservados a Isabela Stolf Guzzardi. Site modelo.
-            </p>
-
-        </div>
-
-
-
-    </footer> <!-- FIM RODAPE -->
-    
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="assets/js/app.js"></script>
-</body>
-</html>
+<?php
+    require_once('footer.php');
+?>
