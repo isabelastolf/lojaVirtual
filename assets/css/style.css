@@ -270,11 +270,11 @@ small {
 }
 
 /* -------------------- DEPOIMENTOS ------------------- */
-.depoimentos {      /*ATÉ AQUI FUNCIONA*/
+.depoimentos {  
     padding-top: 5rem;
 }           
 
-.depoimentos .col-3 {       /*AQUI NÃO FUNCIONA*/
+.depoimentos .col-3 {  
     text-align: center;
     padding: 2rem 1rem;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
@@ -282,7 +282,7 @@ small {
     transition: transform 0.5s;
 }
 
-.depoimentos .col-3:hover {       /*AQUI NÃO FUNCIONA*/
+.depoimentos .col-3:hover {  
     transform: scale(1.1);
 }
 
